@@ -19,6 +19,9 @@ function toggleSide() {
         let theTarget = element.parentNode.parentNode.children[2];
         console.log();
         theTarget.classList.toggle("show");
+        let turn = element.parentNode;
+        console.log(element.parentNode);
+        turn.classList.toggle("rotate");
         }
 
     else if (element.id =="topic") {
@@ -26,12 +29,12 @@ function toggleSide() {
         let plus = element.parentNode.children[1];
         theTarget.classList.toggle("show");
         plus.classList.toggle("rotate");
+        console.log(plus);
         }
     
     else {
         let theTarget = element.children[2];
         theTarget.classList.toggle("show");
-        console.log(theTarget);
         
         let plus = theTarget.parentNode;
         let fake = plus.children[1];
@@ -46,39 +49,30 @@ function toggleSidenav() {
     mainPage.classList.toggle("transparent");
 
     if(sideNav.classList.contains("open")){
-        document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+        document.body.style.backgroundColor = "rgba(black, 0.9)";
     } else {
-        document.body.style.backgroundColor = "white";
+        document.body.style.backgroundColor = "black";
     }
 };
 
-function removeSidenav() {
-    if(sideNav.classList.contains("open")){
-        sideNav.classList.toggle("open");
-         mainPage.classList.toggle("transparent");
-        document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
-    } else {
-        document.body.style.backgroundColor = "white";
-    }
-};
+// function removeSidenav() {
+//     if(sideNav.classList.contains("open")){
+//         sideNav.classList.toggle("open");
+//          mainPage.classList.toggle("transparent");
+//         document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+//     } else {
+//         document.body.style.backgroundColor = "white";
+//     }
+// };
 
 sideToggle.addEventListener('click', function name() {
-    if(sideNav.classList.contains("open")){
-        toggleSidenav();
-    } else {
-        document.body.style.backgroundColor = "white";
-    }
-  
-});
-
-
-close.addEventListener('click', function name() {
     toggleSidenav();
 });
 
-// mainPage.addEventListener('click', function name() {
-//     removeSidenav();
-// });
+
+close.addEventListener('click', function close() {
+    toggleSidenav();
+});
 
 
 alertToggler.addEventListener('click', function click() {
@@ -109,7 +103,3 @@ moveTab.onclick = function eletop() {
         behavior: "smooth"
     });
 };
-
-// document.addEventListener('click', function trigger() {
-//     removeSidenav();
-// });
