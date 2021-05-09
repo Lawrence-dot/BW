@@ -1066,9 +1066,18 @@ img.footer-logo {
 		font-size: 14px;
 	}
 
-	.footer-bottom-row img {
-		max-width: 350px;
+	.mob-location a {
+		font-size: .6rem;
 	}
+
+	.carousel-text h3 {
+		font-size: 1.5rem;
+	}
+
+	.tab-text h1 {
+		font-size: 1.9rem;
+	}
+
 }
 
 @media screen and (max-width: 768px){
