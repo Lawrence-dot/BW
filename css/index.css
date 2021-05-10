@@ -236,7 +236,6 @@ ul.topnav-links span {
 	position: absolute;
 	display: none;
 	top: 60px;
-	left: 79%;
 	color: white;
 	height: 80px;
 	font-size: 1.25rem;
@@ -962,21 +961,26 @@ img.footer-logo {
 	display: inline-block;
 }
 
-
-
-
 @media screen and (max-width: 576px){
 	img.navbrand {
 		max-height: 35px;
 	}
 
-	.top-nav {
-		height: 60px;
+	.mobile-view {
+		display: block;
+		position: absolute;
+		/* top: 0; */
+		bottom: 0;
+		right: 0;
+		height: 49px;
 	}
 
-	.mobile-view {
-		display: block!important;
-		left: 72%;
+	.footer-logos a {
+		padding: .25rem .5rem;
+	}
+
+	.top-nav {
+		height: 60px;
 	}
 
 	.sidebar-toggler-icon {
@@ -987,8 +991,13 @@ img.footer-logo {
 	}
 	
 	.navbar-logo {
-		max-height: 30px;
+		max-height: 34px;
+		max-width: 150px;
 		margin-top: 15px;
+	}
+
+	img.lock-icon {
+
 	}
 
 	.topnav-rows {
@@ -998,12 +1007,10 @@ img.footer-logo {
 	
 	span.button {
 		background-color: white;
-		font-size: .8rem;
 		font-weight: bold;
 		color: #509e2f;
 		height: 10rem;
 		margin-bottom: 40px!important;
-		margin-right: .75rem;
 		padding: .5rem;
 		line-height: 40px;
 		position: relative;
@@ -1067,7 +1074,8 @@ img.footer-logo {
 	}
 
 	.mob-location a {
-		font-size: .6rem;
+		font-size: .63rem;
+
 	}
 
 	.carousel-text h3 {
@@ -1077,6 +1085,13 @@ img.footer-logo {
 	.tab-text h1 {
 		font-size: 1.9rem;
 	}
+
+	span.login-btn {
+		width: 100%;
+		margin: 0;
+	}
+
+
 
 }
 
@@ -1117,10 +1132,6 @@ img.footer-logo {
 @media screen and (max-width: 840px){
 	ul.topnav-links li {
 		display: none!important;
-	}
-
-	.mobile-view {
-		display: block!important;
 	}
 
 	.s-none {
