@@ -1,5 +1,5 @@
 var close = document.getElementById("close-side");
-let sideChildren = document.getElementById("sideChildren");
+var sideChildren = document.getElementById("sideChildren");
 var sideNav = document.getElementById("side-nav");
 var sideToggle = document.getElementById("side-toggler");
 var alertBody = document.getElementById("alert-body");
@@ -7,11 +7,42 @@ var alertToggler = document.getElementById("alert-toggler");
 var alertAddition = document.getElementById("alert-addition");
 var mainPage = document.getElementById("page-content");
 var hoverBtn = document.getElementById("hover-secondary");
+var hoverButton = document.getElementsByClassName("first");
 var loginBox = document.getElementById("login-panel");
 var loginActivator = document.getElementById("login-toggle");
 var goaList = document.getElementsByClassName("goals-list");
 var moveTab = document.getElementById("nav-tab");
+var menu = document.getElementsByClassName("secondary-submenu");
+var pageContent = document.getElementById("main-page");
 
+
+// console.log(mainPage.childNodes[7]);
+
+   for (let i = 0; i < hoverButton.length; i++) {
+       const element = hoverButton[i];
+    //    console.log(element);
+
+       element.addEventListener('mouseover', function mousee() {
+        let elements = event.target;
+            var mainContent = mainPage.childNodes[7];
+             mainContent.style.opacity = "0.8";
+       });
+
+       element.addEventListener('mouseout', function mousee() {
+        let elements = event.target;
+            var mainContent = mainPage.childNodes[7];
+             mainContent.style.opacity = "1";
+       });
+   };
+
+
+// mainPage.addEventListener('mouseover', function over() {
+//     var sublinks = document.getElementsByClassName("sub-menu-1");
+//     console.log(sublinks);
+//     if (sublinks.style.display !== "block") {
+//         console.log("dkj");
+//     }
+// });
 
 function toggleSide() {
     let element = event.target;

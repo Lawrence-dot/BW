@@ -275,6 +275,13 @@ span.button {
 	text-decoration: none;
 }
 
+.secondary-submenu li a:hover .page-content {
+	background-color: rgba(0, 0, 0, 0.041);
+	display: none;
+}
+
+
+
 .sub-menu-1 {
 	position: absolute;
 	z-index: 999999999;
@@ -339,10 +346,6 @@ ul.secondary-submenu li a {
 	width: 40%!important;
 	padding: 0!important;
 }
-
-/* .sec-menucontainer {
-	padding-left: 2.6rem;
-} */
 
 .account {
 	padding-right: 0;
@@ -697,15 +700,18 @@ a.cards-link:hover span.cardslink-arrow {
 	margin-top: 15px;
 	padding: 20px;
 	position: relative;
-	background-color: #161515;
+	background: rgba(0, 0, 0, 0.5);
 	background-size: cover;
 	background-position: center center;
+	background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0));
 	display: flex;
 	align-items: flex-end;
 }
 
+
 .cards-text {
 	position: relative;
+	background-size: cover;
 }
 
 .cards-text h3 {
