@@ -302,9 +302,9 @@
 							
 							<div class="login-container" id="login-panel"> 
 								<div class="row">
-									<div class="col-12">
+									<div class="col-12 form-group">
 										<label>
-											<select>
+											<select class="form-control">
 												<option value="1">Personal Banking</option>
 												<option value="2">Business Online Banking</option>
 												<option value="3">Business Suite Online Banking</option> 
@@ -384,6 +384,15 @@
 				 </div>
 				</div>   
 			</div>
+			<a href="#demo" class="carousel-control-prev" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only"></span>
+			</a>
+
+			<a href="#demo" class="carousel-control-next" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only"></span>
+			</a>
 			</div>
 		</div>
 		
@@ -791,9 +800,9 @@
 		</div>		 
 
 		<div class="contact-footer">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
-					<div class="col-sm-12 col-md-6">
+					<div class="col-sm-12 col-md-6 contact-box">
 						<div class="contact-text my-4 mx-3">
 							<h3> Find A Branch Near You </h3>
 							<div class="input-group mb-3">
@@ -804,7 +813,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-12 col-md-6 border-left">
+					<div class="col-sm-12 col-md-6 contact-box border-left">
 						<div class="contact-text my-4 mx-3">
 							<h3>Talk to an Enterprise Banker</h3>
 							<a class="contact-number" href="tel:1-877-671-2265">1-877-671-2265</a>
@@ -815,199 +824,201 @@
 		</div>
 
 		<footer class="page-footer">
-			<div class="footer-nav">
-				<div class="container-fluid">
-					<div class="row footer-nav-row">
-						<div class="col-sm-0 col-md-3">
-							<div class="footer-nav-text">
-								<h5> Personal Banking </h5>
-								<a> Personal Checking Accounts </a><br>
-								<a> Personal Savings Accounts </a><br>
-								<a> Mortgage Loans </a><br>
-								<a> Personal Loans </a><br>
-								<a> Personal Online Banking </a><br>
-								<a> Open an Account</a><br>
-								<a> Personal Deposit Interest Rates</a>
+			<div class="footer-contents">
+				<div class="footer-nav">
+					<div class="container-fluid">
+						<div class="row footer-nav-row">
+							<div class="col-sm-0 col-md-3">
+								<div class="footer-nav-text">
+									<h5> Personal Banking </h5>
+									<a> Personal Checking Accounts </a><br>
+									<a> Personal Savings Accounts </a><br>
+									<a> Mortgage Loans </a><br>
+									<a> Personal Loans </a><br>
+									<a> Personal Online Banking </a><br>
+									<a> Open an Account</a><br>
+									<a> Personal Deposit Interest Rates</a>
+								</div>
 							</div>
-						</div>
-						<div class="col-sm-0 col-md-3">
-							<div class="footer-nav-text">
-								<h5> Business Banking </h5>
-								<a> Business Checking Accounts </a><br>
-								<a> Business Savings Accounts </a><br>
-								<a> Cash Management Solutions </a><br>
-								<a> Commercial Loans </a><br>
-								<a> Small Business Loans </a><br>
-								<a> Business Deposit Interest Rates</a>
+							<div class="col-sm-0 col-md-3">
+								<div class="footer-nav-text">
+									<h5> Business Banking </h5>
+									<a> Business Checking Accounts </a><br>
+									<a> Business Savings Accounts </a><br>
+									<a> Cash Management Solutions </a><br>
+									<a> Commercial Loans </a><br>
+									<a> Small Business Loans </a><br>
+									<a> Business Deposit Interest Rates</a>
+								</div>
 							</div>
-						</div>
-						<div class="col-sm-0 col-md-3">
-							<div class="footer-nav-text">
-								<h5> About Enterprise </h5>
-								<a> Who We Are </a><br>
-								<a> Newsroom </a><br>
-								<a> Investor Relations </a><br>
-								<a> Careers </a><br>
-								<a> Inclusion Council </a><br>
+							<div class="col-sm-0 col-md-3">
+								<div class="footer-nav-text">
+									<h5> About Enterprise </h5>
+									<a> Who We Are </a><br>
+									<a> Newsroom </a><br>
+									<a> Investor Relations </a><br>
+									<a> Careers </a><br>
+									<a> Inclusion Council </a><br>
+								</div>
 							</div>
-						</div>
-						<div class="col-sm-0 col-md-3">
-							<div class="footer-nav-text">
-								<h5> Need Help? </h5>
-								<a> Contact Us </a><br>
-								<a> Brach/ATM </a><br>
-								<a> Report a Lost/Stolen Card </a><br>
-								<a> Product Demos </a><br>
-								<a> <i class="fa fa-phone"></i> 877-671-2265 </a><br>
+							<div class="col-sm-0 col-md-3">
+								<div class="footer-nav-text">
+									<h5> Need Help? </h5>
+									<a> Contact Us </a><br>
+									<a> Brach/ATM </a><br>
+									<a> Report a Lost/Stolen Card </a><br>
+									<a> Product Demos </a><br>
+									<a> <i class="fa fa-phone"></i> 877-671-2265 </a><br>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="mobile-footer-nav">
-					<ul class="side-links">
-						<li class="side-navs" id="childToggle" onclick="toggleSide()"><a href="javascript:;" id ="topic">
-							Personal Banking</a> <span class="side-plus"> <a href="javascript:;" id="plus"> &#43; </a></span>
-							<ul class="side-children animated fadeInDown" id="sideChildren">
-								<li class="child"> <a href="javascript:;"> Personal Checking Accounts </a>  
-								</li>
-								
-								<li class="child"> <a href="javascript:;"> Personal Savings Accounts </a> 
-								</li>
+					<div class="mobile-footer-nav">
+						<ul class="side-links">
+							<li class="side-navs" id="childToggle" onclick="toggleSide()"><a href="javascript:;" id ="topic">
+								Personal Banking</a> <span class="side-plus"> <a href="javascript:;" id="plus"> &#43; </a></span>
+								<ul class="side-children animated fadeInDown" id="sideChildren">
+									<li class="child"> <a href="javascript:;"> Personal Checking Accounts </a>  
+									</li>
+									
+									<li class="child"> <a href="javascript:;"> Personal Savings Accounts </a> 
+									</li>
 
-								<li class="child"> <a href="javascript:;"> Mortgage Loans </a> 
-								</li>
+									<li class="child"> <a href="javascript:;"> Mortgage Loans </a> 
+									</li>
 
-								<li class="child"> <a href="javascript:;"> Personal Loans </a>
-								</li>
+									<li class="child"> <a href="javascript:;"> Personal Loans </a>
+									</li>
 
-								<li class="child"> <a href="javascript:;"> Personal Online Banking </a>
-								</li>
+									<li class="child"> <a href="javascript:;"> Personal Online Banking </a>
+									</li>
 
-								<li class="child"> <a href="javascript:;"> Open an Account </a>
-								</li>
+									<li class="child"> <a href="javascript:;"> Open an Account </a>
+									</li>
 
-								<li class="child"> <a href="javascript:;"> Personal Deposit Interest Rates</a>
-								</li>
-							</ul>
-						</li>
-						<div class="border-fade"></div>
+									<li class="child"> <a href="javascript:;"> Personal Deposit Interest Rates</a>
+									</li>
+								</ul>
+							</li>
+							<div class="border-fade"></div>
 
-						<li class="side-navs" id="childToggle" onclick="toggleSide()"><a href="javascript:;" id ="topic">
-							Business Banking</a> <span class="side-plus"> <a href="javascript:;" id="plus"> &#43; </a></span>
-							<ul class="side-children animated fadeInDown" id="sideChildren">
-								<li class="child"> <a href="javascript:;"> Business Checking Accounts </a>  
-								</li>
-								
-								<li class="child"> <a href="javascript:;"> Business Savings Accounts </a> 
-								</li>
+							<li class="side-navs" id="childToggle" onclick="toggleSide()"><a href="javascript:;" id ="topic">
+								Business Banking</a> <span class="side-plus"> <a href="javascript:;" id="plus"> &#43; </a></span>
+								<ul class="side-children animated fadeInDown" id="sideChildren">
+									<li class="child"> <a href="javascript:;"> Business Checking Accounts </a>  
+									</li>
+									
+									<li class="child"> <a href="javascript:;"> Business Savings Accounts </a> 
+									</li>
 
-								<li class="child"> <a href="javascript:;"> Cash Management Solutions </a> 
-								</li>
+									<li class="child"> <a href="javascript:;"> Cash Management Solutions </a> 
+									</li>
 
-								<li class="child"> <a href="javascript:;"> Commercial Loans </a>
-								</li>
+									<li class="child"> <a href="javascript:;"> Commercial Loans </a>
+									</li>
 
-								<li class="child"> <a href="javascript:;"> Business Deposit Interest Rates</a>
-								</li>
-							</ul>
-						</li>
-						<div class="border-fade"></div>
+									<li class="child"> <a href="javascript:;"> Business Deposit Interest Rates</a>
+									</li>
+								</ul>
+							</li>
+							<div class="border-fade"></div>
 
-						<li class="side-navs" id="childToggle" onclick="toggleSide()"><a href="javascript:;" id ="topic">
-							About Enterprise</a> <span class="side-plus"> <a href="javascript:;" id="plus"> &#43; </a></span>
-							<ul class="side-children animated fadeInDown" id="sideChildren">
-								<li class="child"> <a href="javascript:;"> Who we are</a>  
-								</li>
-								
-								<li class="child"> <a href="javascript:;"> Newsroom </a> 
-								</li>
+							<li class="side-navs" id="childToggle" onclick="toggleSide()"><a href="javascript:;" id ="topic">
+								About Enterprise</a> <span class="side-plus"> <a href="javascript:;" id="plus"> &#43; </a></span>
+								<ul class="side-children animated fadeInDown" id="sideChildren">
+									<li class="child"> <a href="javascript:;"> Who we are</a>  
+									</li>
+									
+									<li class="child"> <a href="javascript:;"> Newsroom </a> 
+									</li>
 
-								<li class="child"> <a href="javascript:;"> Investor Relations </a> 
-								</li>
+									<li class="child"> <a href="javascript:;"> Investor Relations </a> 
+									</li>
 
-								<li class="child"> <a href="javascript:;"> Careers </a>
-								</li>
+									<li class="child"> <a href="javascript:;"> Careers </a>
+									</li>
 
-								<li class="child"> <a href="javascript:;"> Inclusion Council</a>
-								</li>
-							</ul>
-						</li>
-						<div class="border-fade"></div>
+									<li class="child"> <a href="javascript:;"> Inclusion Council</a>
+									</li>
+								</ul>
+							</li>
+							<div class="border-fade"></div>
 
-						<li class="side-navs" id="childToggle" onclick="toggleSide()"><a href="javascript:;" id ="topic">
-							Need Help?</a> <span class="side-plus"> <a href="javascript:;" id="plus"> &#43; </a></span>
-							<ul class="side-children animated fadeInDown" id="sideChildren">
-								<li class="child"> <a href="javascript:;"> Contact Us </a>  
-								</li>
-								
-								<li class="child"> <a href="javascript:;"> Branch/ATM Locations</a> 
-								</li>
+							<li class="side-navs" id="childToggle" onclick="toggleSide()"><a href="javascript:;" id ="topic">
+								Need Help?</a> <span class="side-plus"> <a href="javascript:;" id="plus"> &#43; </a></span>
+								<ul class="side-children animated fadeInDown" id="sideChildren">
+									<li class="child"> <a href="javascript:;"> Contact Us </a>  
+									</li>
+									
+									<li class="child"> <a href="javascript:;"> Branch/ATM Locations</a> 
+									</li>
 
-								<li class="child"> <a href="javascript:;"> Report a lost or Stolen Card </a> 
-								</li>
+									<li class="child"> <a href="javascript:;"> Report a lost or Stolen Card </a> 
+									</li>
 
-								<li class="child"> <a href="javascript:;"> Product Demos </a>
-								</li>
+									<li class="child"> <a href="javascript:;"> Product Demos </a>
+									</li>
 
-								<li class="child"> <a href="javascript:;"> <i class="fa fa-phone"></i> 877-671-2265 </a>
-								</li>
-							</ul>
-						</li>
-						<div class="border-fade"></div>
-				</ul>
-				</div>
-			</div>
-
-			<div class="footer-logos">
-				<div class="row">
-					<div class="col-sm-12 col-md-6">
-						<h5>Routing #: 011302742</h5>
-						<ul>
-							<li> <a href="#"><i class="fa fa-facebook"></i></a> </li>
-							<li> <a href="#"><i class="fa fa-linkedin"></i></a> </li>
-							<li> <a href="#"><i class="fa fa-twitter"></i></a> </li>
-							<li> <a href="#"><i class="fa fa-instagram"></i></a> </li>
-							<li> <a href="#"><i class="fa fa-youtube"></i></a> </li>
-						</ul>
-					</div>
-					<div class="col-sm-12 col-md-6">
-						<div class="mr-2">
-							<img src="Logos/brand_logo_white.svg" alt="" class="w-100 h-100 footer-logo">
-					    </div>
-					</div>
-				</div>
-			</div>
-			<div class="border-fade"></div>
-
-			<div class="footer-copyrights">
-				<p class="copyright"> &copy; 2021 Enterprise Bank. All Rights Reserved.</p>
-				<nav class="secondary-copy">
-					<ul>
-						<li><a href="#">Privacy | </a></li>
-						<li><a href="#">Security | </a></li>
-						<li><a href="#">CRA Public File | </a></li>
-						<li><a href="#">Portugues | </a></li>
-						<li><a href="#">Khmer | </a></li>
-						<li><a href="#">Sitemap </a></li>
+									<li class="child"> <a href="javascript:;"> <i class="fa fa-phone"></i> 877-671-2265 </a>
+									</li>
+								</ul>
+							</li>
+							<div class="border-fade"></div>
 					</ul>
-				</nav>
-			</div>
+					</div>
+				</div>
 
-			<div class="footer-bottom">
-				<div class="row footer-bottom-row">
-					<div class="col-sm-6 col-md-4 text-white mb-3">
-						 <div class="lender-icon mx-2" style="background-image: url(Logos/logo_ehl.svg);">
-						 </div> 
-						 <div class="icon-member mx-2" aria-label="Member FDIC" style="background-image: url(Logos/logo_fdic.svg);">
-						 </div>
-						 <div class="NMLS"><span>NMLS#<br>449369</span></div> 
+				<div class="footer-logos">
+					<div class="row">
+						<div class="col-sm-12 col-md-6">
+							<h5>Routing #: 011302742</h5>
+							<ul>
+								<li> <a href="#"><i class="fa fa-facebook"></i></a> </li>
+								<li> <a href="#"><i class="fa fa-linkedin"></i></a> </li>
+								<li> <a href="#"><i class="fa fa-twitter"></i></a> </li>
+								<li> <a href="#"><i class="fa fa-instagram"></i></a> </li>
+								<li> <a href="#"><i class="fa fa-youtube"></i></a> </li>
+							</ul>
+						</div>
+						<div class="col-sm-12 col-md-6">
+							<div class="mr-2">
+								<img src="Logos/brand_logo_white.svg" alt="" class="w-100 h-100 footer-logo">
+							</div>
+						</div>
 					</div>
-					<div class="col-sm-6 col-md-5 mx-2">
-						<h3 class="text-center">As recognized by Energage:</h3>
-						<img src="Assets/Utilities/EnterpriseTopPlacestoWork2020.png" alt="" class="w-100">
-					</div>
-					<div class="col-3 col-md-2 my-2 twp">
-						<img src="Assets/Utilities/TWP-USA-2021.png" alt="" class="w-100">
+				</div>
+				<div class="border-fade"></div>
+
+				<div class="footer-copyrights">
+					<p class="copyright"> &copy; 2021 Enterprise Bank. All Rights Reserved.</p>
+					<nav class="secondary-copy">
+						<ul>
+							<li><a href="#">Privacy | </a></li>
+							<li><a href="#">Security | </a></li>
+							<li><a href="#">CRA Public File | </a></li>
+							<li><a href="#">Portugues | </a></li>
+							<li><a href="#">Khmer | </a></li>
+							<li><a href="#">Sitemap </a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="footer-bottom">
+					<div class="row footer-bottom-row">
+						<div class="col-sm-6 col-md-4 text-white mb-3">
+							<div class="lender-icon mx-2" style="background-image: url(Logos/logo_ehl.svg);">
+							</div> 
+							<div class="icon-member mx-2" aria-label="Member FDIC" style="background-image: url(Logos/logo_fdic.svg);">
+							</div>
+							<div class="NMLS"><span>NMLS#<br>449369</span></div> 
+						</div>
+						<div class="col-sm-6 col-md-5 mx-2">
+							<h3 class="text-center">As recognized by Energage:</h3>
+							<img src="Assets/Utilities/EnterpriseTopPlacestoWork2020.png" alt="" class="w-100">
+						</div>
+						<div class="col-3 col-md-2 my-2 twp">
+							<img src="Assets/Utilities/TWP-USA-2021.png" alt="" class="w-100">
+						</div>
 					</div>
 				</div>
 			</div>
